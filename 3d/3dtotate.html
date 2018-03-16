@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/3d转换.css" />
+	</head>
+ 	
+	<body>
+		<script type="text/javascript">
+			
+	function rotate(){
+		var x=document.getElementById("rangeX").value;
+		var y=document.getElementById("rangeY").value;
+		var z=document.getElementById("rangeZ").value;
+		document.getElementById("container1").style.transform="rotateX("+x+"deg) rotateY("+y+"deg) rotateZ("+z+"deg) ";		
+		document.getElementById("range_x").innerText=x;
+		document.getElementById("range_y").innerText=y;
+		document.getElementById("range_z").innerText=z;	
+	}
+</script>
+		
+		
+		
+		<div id="bg1">
+			<div class="stage">
+
+				<div class="container" id="container1">
+					<ul>
+						<li><img src="img/220490-106.jpg" alt="" /></li>
+						<li><img src="img/220490-106.jpg" alt="" /></li>
+						<li><img src="img/220490-106.jpg" alt="" /></li>
+						<li><img src="img/220490-106.jpg" alt="" /></li>
+						<li><img src="img/220490-106.jpg" alt="" /></li>
+						<li><img src="img/220490-106.jpg" alt="" /></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<div id="range_container">
+			<p>rotate x:<span id="range_x"> 0</span>deg</p>
+		<input type="range"  value="0" min="-360" max="360" class="range" id="rangeX" onchange="rotate()"/>
+		
+		<p>rotate y:<span id="range_y"> 0</span>deg</p>
+		<input type="range"  value="0" min="-360" max="360" class="range" id="rangeY" onchange="rotate()"/>
+		
+		<p>rotate z:<span id="range_z"> 0</span>deg</p>
+		<input type="range" value="0" min="-360" max="360" class="range" id="rangeZ" onchange="rotate()"/>
+		</div>
+		
+	</body>
+
+
+
+</html>

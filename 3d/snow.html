@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>雪花纷飞</title>
+	</head>
+	<script src="" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/snow.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<style type="text/css">
+			*{
+			padding: 0px;
+			margin: 0px;
+			font-family:"微软雅黑";
+			}
+			body{
+				position: relative;
+				background: #000;
+				
+			}
+			.snow{
+				animation: ratota 1s infinite linear;
+				text-shadow: 1px 1px rgba(255,255,0,1);
+			}
+			@keyframes ratota{
+				from{transform: rotateZ(0deg) rotateY(0deg);}
+				to{
+					transform: rotateZ(360deg) rotateY(0deg);
+				}
+			}
+		</style>
+	</body>
+</html>
